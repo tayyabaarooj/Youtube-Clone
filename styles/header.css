@@ -1,0 +1,171 @@
+.header{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+height: 55px;
+position: fixed;
+left:0px;
+top:0px;
+right:0px;
+z-index: 100;
+background-color: white;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(207, 207, 207);
+}
+
+.left-section{
+
+
+display: flex;
+align-items: center;
+}
+.menu{
+  height: 22px ;
+  margin-left: 24px;
+  margin-right: 20px;
+  }
+  .ytlogo{
+    height: 22px;
+  }
+
+.middle{
+flex: 1;
+display: flex;
+margin-left: 70px;
+margin-right: 35px;
+align-items: center;
+max-width: 500px;
+justify-content: center;
+}
+.searchbar{
+padding-left: 8px;
+width: 0;
+height: 36px;
+font-size: 16px;
+
+border-width: 1px;
+flex: 1;
+border-radius: 2px;
+border-style: solid;
+box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+border-color: rgb(192, 188, 188);
+}
+.searchbar::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+  
+}
+.searchbutton , .micbutton, .app-container,.upload-container ,.notifybutton{
+  position: relative;
+  font: Roboto , Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbutton {
+  height: 40px;
+  width: 66px;
+  
+  border-style: solid;
+  border-color: rgb(192, 188, 188);
+  border-width: 1px;
+  background-color: rgb(240, 239, 240);
+  margin-left: -1px;
+  margin-right: 10px;
+  
+}
+.searchicon{
+  
+  height: 25px;
+ 
+
+}
+.micbutton .tooltip, .searchbutton .tooltip ,.upload-container .tooltip , .app-container .tooltip, .notifybutton .tooltip{
+  font-size: 12px;
+    position: absolute;
+  color: white;
+  background-color: rgb(160, 160, 160);
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  white-space:nowrap ;
+  opacity: 0;
+  transition: 0.15s;
+  cursor: pointer;
+  pointer-events: none
+  ;
+   bottom: -30px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.micbutton:hover .tooltip, .searchbutton:hover .tooltip ,.upload-container:hover .tooltip , .app-container:hover .tooltip, .notifybutton:hover .tooltip{
+  opacity: 1;
+}
+.micbutton{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+ background-color:  rgb(245, 240, 240) ;
+ 
+ align-items: center;
+
+}
+.micicon{
+height: 21px;
+
+}
+.right-section{
+flex-shrink: 0;
+width: 180px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-right: 20px;
+
+}
+
+.uploadicon{
+height: 24px;
+}
+
+.appicon{
+  height: 24px;
+}
+.notifybutton .tooltip ,.app-container .tooltip ,.upload-container .tooltip{
+ bottom: -38px;
+}
+.notifybutton{
+  position: relative;
+  
+
+}
+
+.noti{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgba(187, 5, 5, 0.931);
+  color: white;
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11px;
+}
+.notifyicon{
+  height: 24px;
+
+  
+}
+.mychannel{
+  height: 32px;
+  border-radius: 16px;
+margin-left: 15px;
+}

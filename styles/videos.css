@@ -1,0 +1,139 @@
+
+.videoinfogrid{
+
+display: grid;
+grid-template-columns: 50px 1fr;
+
+
+}
+
+  .thumbnail{
+width: 100%;
+
+
+  }
+  .video-time{
+    font: Roboto, arial
+    ;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .video-grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap:45px;
+  
+
+  }
+  @media( max-width
+  :500px)
+  {
+    .video-grid{grid-template-columns: 1fr;}
+  } 
+  @media
+    (min-width:501px) and ( max-width:750px
+    ){
+    .video-grid{
+      grid-template-columns: 1fr 1fr ;
+    }
+  }
+@media (min-width:756px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+
+ .video-title{
+  margin-bottom: 10px;
+margin-top: 0px;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+
+ }
+ @media (min-width:1000px)
+{
+  .video-title{
+  font-size: 16px;
+  line-height: 24px;
+  }
+}
+ .video-title-link {
+  text-decoration: none;
+  color: black;
+}
+.channelphoto
+{
+  width: 36px;
+  border-radius: 50px;
+  
+}
+
+.profile-tooltip{
+display: flex;
+align-items: center;
+padding: 10px;
+width: 230px;
+pointer-events: none;
+background-color: white;
+position: absolute;
+
+border: none;
+opacity: 0;
+border-radius: 4px;
+
+box-shadow: 5px 6px 7px  rgba(0,0, 0, 0.15);
+}
+.channel-profile-container{
+  position: relative;
+}
+.channel-profile-container:hover .profile-tooltip{
+  opacity: 1;
+}
+.tooltip-channelphoto{
+  width: 60px;
+  border-radius: 30px;
+}
+.name-subetc{
+  margin-left: 13px;
+  font-family: Roboto,Arial;
+
+}
+.tooltip-channelname{
+font-weight: bold;
+padding-bottom: 3px;
+font-size: 16px;
+}
+.tooltip-subscribers{
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+} 
+.thumbnail-row{
+
+  position: relative;
+  margin-bottom: 8px;
+}
+.video-author, 
+.video-stats{
+  color: rgb(96, 96, 96);
+font-size: 12px;
+}
+@media (min-width:1000px)
+{
+  .video-author, .video-stats{
+  font-size: 14px;
+  
+  }
+}
+.video-author{
+  margin-bottom: 4px;
+}
